@@ -96,7 +96,7 @@ const scale = (innerWidth, innerHeight, data, xValue, yValue) => {
     return { xScale, yScale }
 }
 
-d3.csv('../data/data.csv')  //data is taken from https://grayarea.org/initiative/data-canvas-sense-your-city/
+d3.csv('data/data.csv')  //data is taken from https://grayarea.org/initiative/data-canvas-sense-your-city/
     .then(data => {
         data.forEach(row => {
             row.temperature = +row.temperature;
